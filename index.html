@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Calculator Basic</title>
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header-container">
+        <a href="/" class="text">
+          <img src="./assets/img/logo.png" alt="Sun Icon" id="logo-icon"> Calculator
+        </a>
+      </div>
+      <div class="baris-pertama">
+        <input type="text" name="hasil" class="hasil" id="hasil" value="" placeholder="Hasil" readonly>
+      </div>
+      <div class="baris-kedua">
+        <input type="button" value="C" onclick="hapusLayar()" id="hapus">
+        <input type="button" value="%" onclick="hasil.value = eval(hasil.value/100)" id="persen">
+        <input type="button" value="+" onclick="tampilLayar('+')" id="tambah">
+      </div>
+      <div class="baris-ketiga">
+        <input type="button" value="7" onclick="tampilLayar(7)" id="tujuh">
+        <input type="button" value="8" onclick="tampilLayar(8)" id="delapan">
+        <input type="button" value="9" onclick="tampilLayar(9)" id="sembilan">
+        <input type="button" value="-" onclick="tampilLayar('-')" id="kurang">
+      </div>
+      <div class="baris-keempat">
+        <input type="button" value="4" onclick="tampilLayar(4)" id="empat">
+        <input type="button" value="5" onclick="tampilLayar(5)" id="lima">
+        <input type="button" value="6" onclick="tampilLayar(6)" id="enam">
+        <input type="button" value="/" onclick="tampilLayar('/')" id="bagi">
+      </div>
+      <div class="baris-kelima">
+        <input type="button" value="1" onclick="tampilLayar(1)" id="satu">
+        <input type="button" value="2" onclick="tampilLayar(2)" id="dua">
+        <input type="button" value="3" onclick="tampilLayar(3)" id="tiga">
+        <input type="button" value="x" onclick="tampilLayar('*')"  id="kali">
+      </div>
+      <div class="baris-keenam">
+        <input type="button" value="0" onclick="tampilLayar(0)" id="nol">
+        <input type="button" value="." class="koma" onclick="tampilLayar('.')" id="koma">
+        <input type="button" value="=" onclick="hasil.value = eval(hasil.value||null)" id="sama-dengan">
+      </div>
+      <div class="source-code">
+        <a href="https://github.com/msetyo15" class="btn btn-github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/msetyo15" class="btn btn-facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/msetyo15" class="btn btn-instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/msetyo15/" class="btn btn-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/msetyo15/Basic-Calculator">Source Code <span>→</span></a>   
+      </div>
+    </div>
+  </div>
+  
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
